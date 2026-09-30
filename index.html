@@ -1,0 +1,2043 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Men's Signature × Native Youth — Summer Comfort Tee</title>
+    <meta
+      name="description"
+      content="Men's Signature-এ UK-এর Native Youth-এর আরামদায়ক ৪৮ ইঞ্চি চেস্টের টি-শার্ট। ফ্রি ডেলিভারি ও একাধিক নিলে ২০% ডিসকাউন্ট!"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="mens-signature-logo.png" />
+    <style>
+      :root {
+        --ink: #171714;
+        --muted: #706e67;
+        --paper: #f5f0e7;
+        --card: #fffdf8;
+        --accent: #d9ff42;
+        --line: #dfd8ca;
+        --max: 1180px;
+        --danger: #e63946;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Noto Sans Bengali", sans-serif;
+      }
+      body.modal-open {
+        overflow: hidden;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Sticky Navigation Wrapper */
+      .sticky-header-wrapper {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: var(--paper);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .topbar {
+        background: var(--ink);
+        color: #f9f4e9;
+        display: flex;
+        justify-content: center;
+        gap: 34px;
+        padding: 6px 20px;
+        font-size: 11px;
+        letter-spacing: 0.02em;
+      }
+      .topbar i {
+        color: var(--accent);
+        margin-right: 6px;
+      }
+
+      .site-header {
+        max-width: var(--max);
+        margin: auto;
+        padding: 8px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--paper);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+      }
+      .brand-logo-img {
+        height: 32px;
+        width: auto;
+        object-fit: contain;
+        display: block;
+      }
+      .brand-text-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+      .brand-title {
+        font-size: 16px;
+        font-weight: 900;
+        color: var(--ink);
+        line-height: 1;
+      }
+      .brand-sub {
+        display: block;
+        font-size: 8px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+        margin-top: 3px;
+      }
+      .header-cta {
+        font-size: 12px;
+        font-weight: 800;
+        border-bottom: 1.5px solid var(--ink);
+        padding-bottom: 2px;
+      }
+      .header-cta i {
+        font-size: 10px;
+        margin-left: 5px;
+      }
+
+      .section-shell {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 0.9fr;
+        gap: 70px;
+        align-items: center;
+        padding-top: 35px;
+        padding-bottom: 80px;
+      }
+      .eyebrow,
+      .section-label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-weight: 800;
+        color: #7b766c;
+      }
+      .dot {
+        width: 7px;
+        height: 7px;
+        background: var(--accent);
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 7px;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+      h1 {
+        font-size: clamp(40px, 5vw, 68px);
+        line-height: 1.15;
+        letter-spacing: -0.065em;
+        margin: 20px 0 19px;
+        font-weight: 900;
+      }
+      h1 em {
+        font-style: normal;
+        color: #767267;
+      }
+      .lead {
+        max-width: 500px;
+        font-size: 17px;
+        line-height: 1.8;
+        color: var(--muted);
+        margin-bottom: 25px;
+      }
+      .lead strong {
+        color: var(--ink);
+      }
+      .price-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin: 10px 0 24px;
+      }
+      .price {
+        font-size: 42px;
+        font-weight: 900;
+        letter-spacing: -0.06em;
+      }
+      .price-note {
+        font-size: 11px;
+        line-height: 1.5;
+        color: var(--muted);
+        border-left: 1px solid var(--line);
+        padding-left: 14px;
+      }
+      .price-note b {
+        color: var(--ink);
+      }
+      .primary-btn,
+      .submit-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        background: var(--ink);
+        color: #fffdf8;
+        padding: 16px 23px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 800;
+        box-shadow: 0 10px 25px #17171415;
+        transition: 0.25s;
+      }
+      .primary-btn:hover,
+      .submit-btn:hover {
+        transform: translateY(-2px);
+        background: #31312c;
+      }
+      .microcopy {
+        font-size: 11px;
+        color: var(--muted);
+        margin-top: 13px;
+      }
+      .microcopy i {
+        color: #7b8b1e;
+        margin-right: 5px;
+      }
+      .hero-visual {
+        position: relative;
+      }
+      .floating-badge {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: var(--accent);
+        display: grid;
+        place-content: center;
+        text-align: center;
+        line-height: 1;
+        z-index: 3;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      }
+      .floating-badge b {
+        font-size: 20px;
+        letter-spacing: -0.07em;
+      }
+      .floating-badge small {
+        font-size: 10px;
+        margin-top: 3px;
+      }
+      .visual-caption {
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 4px 0;
+        font-size: 11px;
+        color: var(--muted);
+      }
+      .visual-caption i {
+        color: #a0a93f;
+        margin-right: 4px;
+      }
+
+      /* ট্রাস্ট স্ট্রিপ */
+      .trust-strip-wrapper {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.4);
+        padding: 30px 0;
+      }
+      .trust-strip {
+        max-width: var(--max);
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 0 25px;
+      }
+      .trust-item {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px 16px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .trust-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+      }
+      .trust-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: var(--paper);
+        color: var(--ink);
+        display: grid;
+        place-items: center;
+        font-size: 18px;
+        flex-shrink: 0;
+      }
+      .trust-info b,
+      .trust-info span {
+        display: block;
+      }
+      .trust-info b {
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--ink);
+        line-height: 1.2;
+      }
+      .trust-info span {
+        color: var(--muted);
+        font-size: 11px;
+        margin-top: 3px;
+      }
+
+      .comfort {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      .comfort h2,
+      .order h2 {
+        font-size: clamp(31px, 4vw, 48px);
+        line-height: 1.22;
+        letter-spacing: -0.06em;
+        margin: 16px 0 40px;
+      }
+      .comfort h2 span,
+      .order h2 span {
+        color: #8f8a80;
+      }
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+      .feature-grid article {
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 28px;
+        border-radius: 9px;
+      }
+      .icon {
+        width: 43px;
+        height: 43px;
+        background: var(--accent);
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        font-size: 17px;
+        margin-bottom: 26px;
+      }
+      .feature-grid h3 {
+        font-size: 17px;
+        letter-spacing: -0.03em;
+        margin-bottom: 10px;
+      }
+      .feature-grid p {
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.8;
+        margin: 0;
+      }
+      .policy-section {
+        padding-bottom: 60px;
+      }
+      .policy-card {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 9px;
+        padding: 24px 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+      }
+      .policy-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: var(--paper);
+        color: var(--ink);
+        display: grid;
+        place-items: center;
+        font-size: 22px;
+        flex-shrink: 0;
+      }
+      .policy-content h3 {
+        font-size: 16px;
+        margin: 0 0 6px;
+        font-weight: 800;
+      }
+      .policy-content p {
+        font-size: 13px;
+        color: var(--muted);
+        margin: 0;
+        line-height: 1.6;
+      }
+      .offer {
+        padding-bottom: 110px;
+      }
+      .offer-card {
+        background: var(--ink);
+        color: #fffdf8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45px 55px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+      }
+      .offer-card:after {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 1px solid #ffffff18;
+        right: 130px;
+        top: -150px;
+      }
+      .offer-kicker {
+        color: var(--accent);
+        font-size: 11px;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+      .offer h2 {
+        font-size: 32px;
+        line-height: 1.3;
+        letter-spacing: -0.05em;
+        margin: 12px 0;
+      }
+      .offer h2 span {
+        color: #d9d2c7;
+      }
+      .offer p {
+        color: #a7a399;
+        font-size: 13px;
+        line-height: 1.8;
+        max-width: 560px;
+        margin: 0;
+      }
+      .offer-tile {
+        width: 128px;
+        height: 128px;
+        border: 1px solid #ffffff26;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        flex-shrink: 0;
+        z-index: 1;
+      }
+      .offer-tile i {
+        color: var(--accent);
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+      .offer-tile b {
+        font-size: 20px;
+      }
+      .offer-tile small {
+        font-size: 10px;
+        color: #bcb6aa;
+      }
+      .order {
+        padding-top: 20px;
+        padding-bottom: 110px;
+      }
+      .order-heading {
+        margin-bottom: 35px;
+      }
+      .order-heading p {
+        font-size: 14px;
+        color: var(--muted);
+      }
+      .order-layout {
+        display: grid;
+        grid-template-columns: 1.15fr 0.75fr;
+        gap: 34px;
+        align-items: start;
+      }
+      .order-form {
+        background: var(--card);
+        padding: 34px;
+        border: 1px solid var(--line);
+        border-radius: 9px;
+      }
+      .order-form label,
+      .order-form legend {
+        display: block;
+        font-size: 12px;
+        font-weight: 800;
+        margin-bottom: 18px;
+      }
+      .order-form label > span,
+      .order-form legend {
+        color: var(--ink);
+      }
+      .order-form label > span {
+        color: #bd5e45;
+      }
+      .order-form input[type="text"],
+      .order-form input[type="tel"],
+      .order-form textarea {
+        display: block;
+        width: 100%;
+        border: 1px solid var(--line);
+        background: #fffefa;
+        margin-top: 8px;
+        padding: 13px 14px;
+        border-radius: 4px;
+        font: inherit;
+        font-size: 13px;
+        outline: none;
+        transition: 0.2s;
+      }
+      .order-form input:focus,
+      .order-form textarea:focus {
+        border-color: #9ea842;
+        box-shadow: 0 0 0 3px #d9ff4238;
+      }
+      .order-form textarea {
+        resize: vertical;
+      }
+      .order-form fieldset {
+        border: 0;
+        padding: 0;
+        margin: 25px 0 20px;
+      }
+
+      /* প্যাকস */
+      .packs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        align-items: stretch;
+      }
+      .pack {
+        cursor: pointer;
+        position: relative;
+        margin: 0 !important;
+        display: flex;
+      }
+      .pack input {
+        position: absolute;
+        opacity: 0;
+      }
+      .pack span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 80px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        padding: 10px 6px;
+        text-align: center;
+        background: #fffefa;
+        box-sizing: border-box;
+      }
+      .pack input:checked + span {
+        border-color: var(--ink);
+        box-shadow: inset 0 0 0 1px var(--ink);
+        background: #f3f8d5;
+      }
+      .pack b,
+      .pack small {
+        display: block;
+      }
+      .pack b {
+        font-size: 13px;
+        line-height: 1.25;
+      }
+      .pack small {
+        font-size: 9px;
+        color: var(--muted);
+        margin-top: 4px;
+        line-height: 1.3;
+      }
+
+      .consent {
+        display: flex !important;
+        gap: 8px;
+        font-size: 11px !important;
+        font-weight: 500 !important;
+        align-items: flex-start;
+      }
+      .consent input {
+        accent-color: var(--ink);
+        margin-top: 3px;
+      }
+      .submit-btn {
+        border: 0;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      /* ডাইরেক্ট কন্টাক্ট বাটন অপশন */
+      .direct-chat-buttons {
+        display: flex;
+        gap: 12px;
+        margin-top: 14px;
+      }
+      .chat-btn {
+        flex: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 14px;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 800;
+        border: 1px solid var(--line);
+        background: var(--paper);
+        color: var(--ink);
+        transition: 0.25s;
+      }
+      .chat-btn:hover {
+        background: var(--ink);
+        color: var(--accent);
+        border-color: var(--ink);
+        transform: translateY(-2px);
+      }
+      .chat-btn i {
+        font-size: 16px;
+      }
+
+      .confirm-info-box {
+        background: #f0ebe1;
+        border: 1px dashed #c0b7a6;
+        padding: 12px 15px;
+        border-radius: 6px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 12px;
+        color: #4a4741;
+      }
+      .confirm-info-box i {
+        font-size: 18px;
+        color: #7b8b1e;
+        flex-shrink: 0;
+      }
+
+      .order-summary {
+        background: var(--ink);
+        color: #fffdf8;
+        border-radius: 9px;
+        padding: 23px;
+        position: sticky;
+        top: 80px;
+      }
+      .summary-top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+      .summary-top i {
+        color: var(--accent);
+      }
+      .order-summary img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        object-position: center 25%;
+        border-radius: 5px;
+        mix-blend-mode: screen;
+        opacity: 0.9;
+      }
+      .summary-product {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0;
+        border-bottom: 1px solid #ffffff1c;
+        font-size: 13px;
+      }
+      .summary-product small {
+        display: block;
+        color: #a5a096;
+        font-size: 10px;
+        margin-top: 5px;
+      }
+      .summary-lines {
+        font-size: 12px;
+        padding-top: 13px;
+      }
+      .summary-lines div {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        color: #c0baaf;
+      }
+      .summary-lines b {
+        color: #fffdf8;
+      }
+      .summary-lines .total {
+        font-size: 16px;
+        color: #fffdf8;
+        margin-top: 18px;
+        padding-top: 14px;
+        border-top: 1px solid #ffffff2b;
+      }
+      .summary-lines .total b {
+        color: var(--accent);
+        font-size: 22px;
+      }
+      .cod {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 24px;
+        padding-top: 17px;
+        border-top: 1px solid #ffffff1c;
+      }
+      .cod i {
+        color: var(--accent);
+        font-size: 20px;
+      }
+      .cod b,
+      .cod small {
+        display: block;
+      }
+      .cod b {
+        font-size: 12px;
+      }
+      .cod small {
+        font-size: 10px;
+        color: #a5a096;
+        margin-top: 3px;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        max-width: 1200px;
+        margin: auto;
+        padding: 28px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      footer p,
+      footer a {
+        font-size: 11px;
+        color: var(--muted);
+        margin: 0;
+      }
+      footer a {
+        color: var(--ink);
+        font-weight: 800;
+      }
+      .brand-proof {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #ece5d7;
+        padding: 9px 12px;
+        border-radius: 5px;
+        margin: 0 0 18px;
+      }
+      .brand-proof > i {
+        color: #9da93b;
+        font-size: 16px;
+      }
+      .brand-proof b,
+      .brand-proof small {
+        display: block;
+      }
+      .brand-proof b {
+        font-size: 12px;
+      }
+      .brand-proof small {
+        font-size: 9px;
+        color: var(--muted);
+        margin-top: 2px;
+      }
+
+      /* Carousel Styles */
+      .carousel {
+        position: relative;
+        background: #f0ebe1;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        width: 100%;
+        touch-action: pan-y;
+      }
+      .carousel-track {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+      }
+      .slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          opacity 0.45s ease,
+          visibility 0.45s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .slide.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+      .slide-label {
+        position: absolute;
+        left: 14px;
+        top: 14px;
+        background: rgba(23, 23, 20, 0.85);
+        color: #fffdf8;
+        padding: 5px 9px;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: 700;
+        z-index: 2;
+      }
+      .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--ink);
+        cursor: pointer;
+        z-index: 2;
+        transition: 0.2s;
+        display: grid;
+        place-items: center;
+      }
+      .carousel-btn:hover {
+        background: var(--accent);
+      }
+      .carousel-btn.prev {
+        left: 10px;
+      }
+      .carousel-btn.next {
+        right: 10px;
+      }
+      .carousel-dots {
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 6px;
+        z-index: 2;
+      }
+      .carousel-dot {
+        width: 8px;
+        height: 8px;
+        border: 0;
+        padding: 0;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      .carousel-dot.active {
+        width: 20px;
+        border-radius: 6px;
+        background: var(--ink);
+      }
+
+      /* Size Section Styles */
+      .size-section {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 70px;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 110px;
+      }
+      .size-copy h2 {
+        font-size: clamp(31px, 4vw, 48px);
+        line-height: 1.22;
+        letter-spacing: -0.06em;
+        margin: 16px 0;
+      }
+      .size-copy h2 span {
+        color: #8f8a80;
+      }
+      .size-copy > p {
+        font-size: 14px;
+        line-height: 1.9;
+        color: var(--muted);
+        max-width: 460px;
+      }
+      .measure-tip {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-top: 25px;
+        padding: 14px 15px;
+        background: #ece5d7;
+        border-radius: 5px;
+        max-width: 360px;
+      }
+      .measure-tip > i {
+        font-size: 19px;
+        color: #9da93b;
+      }
+      .measure-tip b,
+      .measure-tip small {
+        display: block;
+      }
+      .measure-tip b {
+        font-size: 12px;
+      }
+      .measure-tip small {
+        font-size: 10px;
+        color: var(--muted);
+        margin-top: 3px;
+      }
+      .size-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 9px;
+        padding: 25px;
+      }
+      .size-card-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 900;
+        font-size: 14px;
+      }
+      .size-card-head i {
+        color: #a0a93f;
+      }
+      .size-visual {
+        height: 185px;
+        background: #ece5d7;
+        border-radius: 6px;
+        margin: 17px 0;
+        display: grid;
+        place-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .shirt-outline {
+        position: relative;
+        text-align: center;
+        color: #c5b9a6;
+      }
+      .shirt-outline > i {
+        font-size: 145px;
+      }
+      .shirt-outline b {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--ink);
+        font-size: 21px;
+        letter-spacing: -0.08em;
+      }
+      .measure-line {
+        position: absolute;
+        width: 175px;
+        border-top: 2px dashed #9da93b;
+        left: 50%;
+        top: 46%;
+        transform: translate(-50%, -50%);
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 11px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 12px 8px;
+        border-bottom: 1px solid var(--line);
+      }
+      th {
+        color: var(--muted);
+        font-size: 10px;
+        font-weight: 700;
+      }
+      tbody tr:last-child td {
+        border-bottom: 0;
+      }
+      .fit-pill {
+        display: inline-block;
+        background: #eeeae2;
+        color: #7e776c;
+        padding: 4px 7px;
+        border-radius: 20px;
+        font-size: 9px;
+      }
+      .fit-pill.perfect {
+        background: #e9f4b5;
+        color: #566219;
+        font-weight: 800;
+      }
+
+      /* Modal Overlay */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(23, 23, 20, 0.65);
+        backdrop-filter: blur(8px);
+        display: grid;
+        place-items: center;
+        z-index: 9999;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          opacity 0.3s ease,
+          visibility 0.3s ease;
+      }
+      .modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .modal-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        max-width: 440px;
+        width: 100%;
+        padding: 35px 25px 30px;
+        text-align: center;
+        position: relative;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        transform: scale(0.85);
+        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .modal-overlay.active .modal-card {
+        transform: scale(1);
+      }
+      .modal-icon-badge {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin: 0 auto 20px;
+        font-size: 32px;
+        position: relative;
+      }
+      .modal-card.success .modal-icon-badge {
+        background: var(--accent);
+        color: var(--ink);
+        box-shadow: 0 8px 20px rgba(217, 255, 66, 0.4);
+      }
+      .modal-card.failed .modal-icon-badge {
+        background: #fee2e2;
+        color: var(--danger);
+        box-shadow: 0 8px 20px rgba(230, 57, 70, 0.2);
+      }
+      .modal-card h3 {
+        font-size: 22px;
+        font-weight: 900;
+        margin-bottom: 10px;
+        letter-spacing: -0.03em;
+      }
+      .modal-card p {
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+      .modal-btn {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 800;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.2s;
+        background: var(--ink);
+        color: #fffdf8;
+      }
+      .modal-btn:hover {
+        opacity: 0.9;
+      }
+
+      /* Responsive Rules */
+      @media (max-width: 800px) {
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 35px;
+          padding-top: 20px;
+          padding-bottom: 60px;
+        }
+        .hero-copy {
+          order: 1;
+        }
+        .hero-visual {
+          order: 0;
+          max-width: 500px;
+          margin: auto;
+          width: 100%;
+        }
+        .trust-strip {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+        }
+        .comfort {
+          padding-top: 70px;
+          padding-bottom: 70px;
+        }
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+        .offer-card {
+          padding: 32px 25px;
+        }
+        .offer-tile {
+          width: 105px;
+          height: 105px;
+        }
+        .order-layout {
+          grid-template-columns: 1fr;
+        }
+        .order-summary {
+          position: static;
+          order: -1;
+        }
+        .order {
+          padding-bottom: 70px;
+        }
+        .size-section {
+          grid-template-columns: 1fr;
+          gap: 35px;
+          padding-bottom: 75px;
+        }
+        .size-card {
+          max-width: 560px;
+        }
+        .brand-proof {
+          margin-bottom: 14px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .topbar {
+          gap: 10px;
+          font-size: 9px;
+          padding: 4px 10px;
+        }
+        .topbar span:last-child {
+          display: none;
+        }
+        .site-header {
+          padding: 8px 14px;
+        }
+        .brand-logo-img {
+          height: 26px;
+        }
+        .brand-title {
+          font-size: 14px;
+        }
+        .brand-sub {
+          font-size: 7px;
+        }
+        .header-cta {
+          font-size: 11px;
+        }
+        .section-shell {
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+        h1 {
+          font-size: 36px;
+        }
+        .lead {
+          font-size: 15px;
+        }
+        .price {
+          font-size: 37px;
+        }
+        .trust-strip-wrapper {
+          padding: 20px 0;
+        }
+        .trust-strip {
+          padding: 0 18px;
+        }
+        .trust-item {
+          padding: 12px 10px;
+          gap: 10px;
+        }
+        .trust-icon {
+          width: 34px;
+          height: 34px;
+          font-size: 14px;
+        }
+        .trust-info b {
+          font-size: 12px;
+        }
+        .trust-info span {
+          font-size: 9px;
+        }
+        .policy-card {
+          padding: 18px;
+          gap: 14px;
+        }
+        .policy-icon {
+          width: 42px;
+          height: 42px;
+          font-size: 18px;
+        }
+        .offer-card {
+          display: block;
+        }
+        .offer-tile {
+          margin-top: 25px;
+        }
+        .order-form {
+          padding: 24px 18px;
+        }
+        .packs {
+          gap: 5px;
+        }
+        .pack span {
+          padding: 8px 4px;
+          min-height: 75px;
+        }
+        .pack small {
+          font-size: 8px;
+        }
+        footer {
+          padding: 25px 18px;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .carousel-track {
+          aspect-ratio: 4 / 5;
+        }
+        .carousel-btn {
+          width: 32px;
+          height: 32px;
+          font-size: 11px;
+        }
+        .slide-label {
+          font-size: 9px;
+          left: 10px;
+          top: 10px;
+        }
+
+        .floating-badge {
+          width: 60px;
+          height: 60px;
+          top: 10px;
+          right: 10px;
+        }
+        .floating-badge b {
+          font-size: 16px;
+        }
+        .floating-badge small {
+          font-size: 8px;
+        }
+
+        .size-card {
+          padding: 18px;
+        }
+        .size-visual {
+          height: 160px;
+        }
+        .shirt-outline > i {
+          font-size: 125px;
+        }
+        .measure-line {
+          width: 150px;
+        }
+        table {
+          font-size: 10px;
+        }
+        .direct-chat-buttons {
+          gap: 8px;
+        }
+        .chat-btn {
+          padding: 10px 8px;
+          font-size: 11px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sticky Navigation Wrapper -->
+    <div class="sticky-header-wrapper">
+      <div class="topbar">
+        <span
+          ><i class="fa-solid fa-truck-fast"></i> সম্পূর্ণ ফ্রি ডেলিভারি</span
+        >
+        <span><i class="fa-solid fa-tags"></i> ২+ টি নিলে ২০% ডিসকাউন্ট!</span>
+        <span><i class="fa-solid fa-shield-heart"></i> ক্যাশ অন ডেলিভারি</span>
+      </div>
+
+      <header class="site-header">
+        <a class="brand" href="#top">
+          <img
+            src="mens-signature-logo.png"
+            alt="Men's Signature Logo"
+            class="brand-logo-img"
+            onerror="this.style.display = 'none'"
+          />
+          <div class="brand-text-wrapper">
+            <span class="brand-title">Men's Signature</span>
+            <span class="brand-sub">Signature Looks for Signature Men</span>
+          </div>
+        </a>
+        <a class="header-cta" href="#order"
+          >অর্ডার করুন <i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </header>
+    </div>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="dot"></span> Men's Signature-এর বিশেষ কালেকশন
+          </div>
+          <h1>এতোটাই কমফোর্টেবল,<br /><em>মনে হবে</em> গায়ে কিছুই নেই</h1>
+          <p class="lead">
+            UK-এর বিখ্যাত <strong>Native Youth</strong> ব্র্যান্ডের সলিড
+            প্রিমিয়াম টি-শার্ট—রিল্যাক্সড ফিট আর সারাদিনের কমফোর্ট একসাথে
+          </p>
+          <div class="brand-proof">
+            <i class="fa-solid fa-crown"></i>
+            <span
+              ><b>Native Youth</b><small>Famous UK fashion brand</small></span
+            >
+          </div>
+          <div class="price-row">
+            <span class="price">৳৪৯৯</span>
+            <span class="price-note"
+              >মহা অফার!<br /><b>ডেলিভারি চার্জ একদম ফ্রি</b></span
+            >
+          </div>
+          <a class="primary-btn" href="#order"
+            >আমি নিতে চাই <i class="fa-solid fa-arrow-down"></i
+          ></a>
+          <p class="microcopy">
+            <i class="fa-solid fa-lock"></i> নিরাপদ অর্ডার · ফোন করে কনফার্ম করা
+            হবে
+          </p>
+        </div>
+        <div class="hero-visual">
+          <div
+            class="carousel"
+            id="heroCarousel"
+            aria-label="Product image carousel"
+          >
+            <span class="floating-badge"><b>৪৮″</b><small>চেস্ট</small></span>
+            <div class="carousel-track">
+              <div class="slide active">
+                <img
+                  src="product-demo.jpg"
+                  alt="কালো Native Youth টি-শার্ট পরা মডেল"
+                />
+                <span class="slide-label">On-body fit</span>
+              </div>
+              <div class="slide">
+                <img
+                  src="product-detail.jpg"
+                  alt="Native Youth টি-শার্টের কলার ও ফ্যাব্রিকের ক্লোজ-আপ"
+                />
+                <span class="slide-label">Fabric detail</span>
+              </div>
+              <div class="slide">
+                <img
+                  src="product-flatlay.jpg"
+                  alt="ভাঁজ করা কালো Native Youth টি-শার্ট"
+                />
+                <span class="slide-label">The signature colour</span>
+              </div>
+            </div>
+            <button
+              class="carousel-btn prev"
+              type="button"
+              aria-label="আগের ছবি"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button
+              class="carousel-btn next"
+              type="button"
+              aria-label="পরের ছবি"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="carousel-dots">
+              <button
+                class="carousel-dot active"
+                type="button"
+                aria-label="ছবি ১"
+              ></button>
+              <button
+                class="carousel-dot"
+                type="button"
+                aria-label="ছবি ২"
+              ></button>
+              <button
+                class="carousel-dot"
+                type="button"
+                aria-label="ছবি ৩"
+              ></button>
+            </div>
+          </div>
+          <div class="visual-caption">
+            <span><i class="fa-solid fa-sun"></i> Summer-ready</span>
+            <span><i class="fa-solid fa-feather"></i> Ultra comfort</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ট্রাস্ট স্ট্রিপ সেকশন -->
+      <div class="trust-strip-wrapper">
+        <section class="trust-strip">
+          <div class="trust-item">
+            <div class="trust-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="trust-info">
+              <b>Native Youth</b>
+              <span>Famous UK brand</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon"><i class="fa-solid fa-ruler"></i></div>
+            <div class="trust-info">
+              <b>৪৮″ চেস্ট</b>
+              <span>পড়তে পারবেন ৪৪–৪৮″</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon"><i class="fa-solid fa-wind"></i></div>
+            <div class="trust-info">
+              <b>ব্রিথেবল ফ্যাব্রিক</b>
+              <span>বাতাস চলাচল করে</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <div class="trust-info">
+              <b>ফ্রি ডেলিভারি</b>
+              <span>সারাদেশে ডেলিভারি ফ্রি</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="comfort section-shell">
+        <div class="section-label">কেন এই টি-শার্ট?</div>
+        <h2>ফিট নিয়ে ভাবনা নেই,<br /><span>কমফোর্টটাই আসল।</span></h2>
+        <div class="feature-grid">
+          <article>
+            <div class="icon"><i class="fa-solid fa-wind"></i></div>
+            <h3>গরমের জন্য পারফেক্ট</h3>
+            <p>হালকা ও আরামদায়ক ফ্যাব্রিক—সারাদিন পরে থাকলেও ভারী লাগবে না।</p>
+          </article>
+          <article>
+            <div class="icon"><i class="fa-solid fa-expand"></i></div>
+            <h3>৪৪–৪৮″ বুকের জন্য</h3>
+            <p>
+              টি-শার্টের মাপ ৪৮ ইঞ্চি; ৪৪ থেকে ৪৮ ইঞ্চি বুকের মাপের মানুষ পরতে
+              পারবেন।
+            </p>
+          </article>
+          <article>
+            <div class="icon"><i class="fa-solid fa-shirt"></i></div>
+            <h3>সলিড কালার, ক্লিন লুক</h3>
+            <p>
+              সবকিছুর সাথে যায়—জিন্স, চিনো বা শর্টস। এক টি-শার্টে প্রতিদিনের
+              স্টাইল।
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="size-section section-shell">
+        <div class="size-copy">
+          <div class="section-label">সাইজ গাইড</div>
+          <h2>আপনার মাপের সাথে<br /><span>মিলিয়ে নিন</span></h2>
+          <p>
+            এই টি-শার্টটি এক সাইজে পাওয়া যাবে। বুকের চারপাশের মাপ অনুযায়ী আপনার
+            সম্ভাব্য ফিট দেখে নিন।
+          </p>
+          <div class="measure-tip">
+            <i class="fa-solid fa-ruler-horizontal"></i>
+            <span
+              ><b>কীভাবে মাপবেন?</b
+              ><small
+                >বুকের সবচেয়ে চওড়া অংশ ঘিরে ফিতা দিয়ে মাপ নিন।</small
+              ></span
+            >
+          </div>
+        </div>
+        <div class="size-card">
+          <div class="size-card-head">
+            <span>One Size</span><i class="fa-solid fa-ruler-combined"></i>
+          </div>
+          <div class="size-visual">
+            <div class="shirt-outline">
+              <i class="fa-solid fa-shirt"></i><span class="measure-line"></span
+              ><b>৪৮″</b>
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>আপনার বুকের মাপ</th>
+                <th>ফিট</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>৪৪–৪৫ ইঞ্চি</td>
+                <td><span class="fit-pill">রিল্যাক্সড</span></td>
+              </tr>
+              <tr>
+                <td>৪৬–৪৮ ইঞ্চি</td>
+                <td><span class="fit-pill perfect">কমফোর্ট ফিট</span></td>
+              </tr>
+              <tr>
+                <td>৪৮ ইঞ্চির বেশি</td>
+                <td><span class="fit-pill">টাইট হতে পারে</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="policy-section section-shell">
+        <div class="policy-card">
+          <div class="policy-icon">
+            <i class="fa-solid fa-rotate-left"></i>
+          </div>
+          <div class="policy-content">
+            <h3>সহজ ও নিরাপদ রিটার্ন পলিসি</h3>
+            <p>
+              ডেলিভারি ম্যান থাকা অবস্থায় পণ্য ট্রায়াল দিয়ে চেক করে নিতে
+              পারবেন। কোনো কারণে রিটার্ন করতে চাইলে ডেলিভারি চার্জ প্রদান করে
+              সাথে সাথে রিটার্ন করতে পারবেন।
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer section-shell">
+        <div class="offer-card">
+          <div>
+            <span class="offer-kicker">বিশেষ ধামাকা অফার</span>
+            <h2>২ বা তার বেশি নিলে<br /><span>ফ্ল্যাট ২০% ডিসকাউন্ট!</span></h2>
+            <p>
+              একই সিগনেচার কালারের একাধিক টি-শার্ট একসাথে নিন—উপভোগ করুন ২০%
+              পর্যন্ত বিশাল ছাড় এবং ফ্রি ডেলিভারি!
+            </p>
+          </div>
+          <div class="offer-tile">
+            <i class="fa-solid fa-tags"></i><b>২০% ছাড়</b>
+            <small>২ বা তার বেশি নিলে</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="order" class="order section-shell">
+        <div class="order-heading">
+          <div class="section-label">আজকের অফার</div>
+          <h2>আপনার অর্ডারটি<br /><span>এখনই নিশ্চিত করুন</span></h2>
+          <p>ফর্মটি পূরণ করুন—আমাদের টিম ফোন করে অর্ডার কনফার্ম করবে।</p>
+        </div>
+        <div class="order-layout">
+          <form id="orderForm" class="order-form">
+            <input
+              type="hidden"
+              name="product"
+              value="Native Youth Single Color Tee"
+            />
+            <input
+              type="hidden"
+              name="size"
+              value="One Size — Garment Chest 48 inches"
+            />
+            <input type="hidden" name="unitPrice" value="499" />
+
+            <label
+              >আপনার নাম <span>*</span>
+              <input
+                required
+                name="name"
+                type="text"
+                placeholder="পুরো নাম লিখুন"
+              />
+            </label>
+            <label
+              >মোবাইল নম্বর <span>*</span>
+              <input
+                required
+                name="phone"
+                type="tel"
+                placeholder="01XXXXXXXXX"
+              />
+            </label>
+            <label
+              >ডেলিভারি ঠিকানা <span>*</span>
+              <textarea
+                required
+                name="address"
+                rows="3"
+                placeholder="বাসা/রোড, এলাকা, জেলা"
+              ></textarea>
+            </label>
+
+            <fieldset>
+              <legend>কতটি নিতে চান?</legend>
+              <div class="packs">
+                <label class="pack active">
+                  <input type="radio" name="quantity" value="1" checked />
+                  <span><b>১টি</b><small>৳৪৯৯ · ফ্রি ডেলিভারি</small></span>
+                </label>
+                <label class="pack">
+                  <input type="radio" name="quantity" value="2" />
+                  <span
+                    ><b>২টি (২০% ছাড়)</b
+                    ><small>৳৭৯৮ · ফ্রি ডেলিভারি</small></span
+                  >
+                </label>
+                <label class="pack">
+                  <input type="radio" name="quantity" value="3" />
+                  <span
+                    ><b>৩টি (২০% ছাড়)</b
+                    ><small>৳১,১৯৮ · ফ্রি ডেলিভারি</small></span
+                  >
+                </label>
+              </div>
+            </fieldset>
+
+            <label class="consent">
+              <input required type="checkbox" checked />
+              <span
+                >আমার দেওয়া তথ্য ব্যবহার করে অর্ডার কনফার্ম করতে সম্মত
+                আছি।</span
+              >
+            </label>
+            <button class="submit-btn" type="submit">
+              অর্ডার কনফার্ম করুন <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <!-- হোয়াটসঅ্যাপ এবং মেসেঞ্জার বাটন সেকশন -->
+            <div class="direct-chat-buttons">
+              <a
+                href="https://wa.me/8801639633847"
+                target="_blank"
+                class="chat-btn"
+              >
+                <i class="fa-brands fa-whatsapp"></i> হোয়াটসঅ্যাপ
+              </a>
+              <a
+                href="https://m.me/menssignaturee"
+                target="_blank"
+                class="chat-btn"
+              >
+                <i class="fa-brands fa-facebook-messenger"></i> মেসেঞ্জার
+              </a>
+            </div>
+
+            <div class="confirm-info-box">
+              <i class="fa-solid fa-headset"></i>
+              <span
+                >অর্ডার করার পর আমাদের কাস্টমার প্রতিনিধি কল করে আপনার অর্ডারটি
+                রিকনফার্ম করবেন।</span
+              >
+            </div>
+          </form>
+
+          <aside class="order-summary">
+            <div class="summary-top">
+              <span>আপনার অর্ডার</span><i class="fa-solid fa-bag-shopping"></i>
+            </div>
+            <img
+              src="black-tshirt-warm-flatlay.png"
+              alt="Native Youth টি-শার্ট"
+            />
+            <div class="summary-product">
+              <div>
+                <b>Native Youth Tee</b>
+                <small>One Size · Garment Chest 48″</small>
+              </div>
+              <b id="summaryQty">× ১</b>
+            </div>
+            <div class="summary-lines">
+              <div><span>পণ্যের মূল্য</span><b id="summaryPrice">৳৪৯৯</b></div>
+              <div>
+                <span>ডেলিভারি</span><b id="summaryDelivery">ফ্রি (৳০)</b>
+              </div>
+              <div class="total">
+                <span>সর্বমোট</span><b id="summaryTotal">৳৪৯৯</b>
+              </div>
+            </div>
+            <div class="cod">
+              <i class="fa-solid fa-money-bill-wave"></i>
+              <span
+                ><b>ক্যাশ অন ডেলিভারি</b>
+                <small>পণ্য হাতে পেয়ে পেমেন্ট করুন</small></span
+              >
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand">
+        <img
+          src="mens-signature-logo.png"
+          alt="Men's Signature Logo"
+          class="brand-logo-img"
+          onerror="this.style.display = 'none'"
+        />
+        <div class="brand-text-wrapper">
+          <span class="brand-title">Men's Signature</span>
+          <span class="brand-sub">CURATED FOR MEN</span>
+        </div>
+      </div>
+      <p>© ২০২৬ Men's Signature. All rights reserved.</p>
+      <a href="#order">অর্ডার করুন <i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- সাক্সেস / ফেইল্ড মডাল -->
+    <div id="orderModal" class="modal-overlay" role="dialog" aria-modal="true">
+      <div id="modalCard" class="modal-card success">
+        <div class="modal-icon-badge">
+          <i id="modalIcon" class="fa-solid fa-check"></i>
+        </div>
+        <h3 id="modalTitle">অর্ডার সফল হয়েছে!</h3>
+        <p id="modalDesc">
+          ধন্যবাদ! আপনার অর্ডারটি সঠিকভাবে গ্রহণ করা হয়েছে। আমাদের প্রতিনিধি
+          শীঘ্রই কল করে আপনার অর্ডারটি কনফার্ম করবেন।
+        </p>
+        <button class="modal-btn" onclick="closeModal()">ঠিক আছে</button>
+      </div>
+    </div>
+
+    <script>
+      const APPS_SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbyOn2W88vd9mSev1sFj7lFJzY3guAqIVHG06Ah6mCb4vPJH_xn63pLvfd9BdTsJ0esxww/exec";
+      const UNIT_PRICE = 499;
+
+      const form = document.getElementById("orderForm");
+      const qtyInputs = [
+        ...document.querySelectorAll('input[name="quantity"]'),
+      ];
+      const summaryQty = document.getElementById("summaryQty");
+      const summaryPrice = document.getElementById("summaryPrice");
+      const summaryDelivery = document.getElementById("summaryDelivery");
+      const summaryTotal = document.getElementById("summaryTotal");
+
+      function money(n) {
+        return "৳" + Number(n).toLocaleString("bn-BD");
+      }
+
+      /* মোবাইল নম্বর ক্লিন ও ভ্যালিডেট করার ফাংশন */
+      function normalizeBDPhoneNumber(phone) {
+        if (!phone) return null;
+
+        // বাংলা সংখ্যা থেকে ইংরেজিতে রূপান্তর
+        const bnDigits = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯"];
+        let converted = phone.toString();
+        for (let i = 0; i < 10; i++) {
+          converted = converted.replace(new RegExp(bnDigits[i], "g"), i);
+        }
+
+        // শুধু সংখ্যা ছাড়া বাকি সব রিমুভ (স্পেস, হাইফেন, প্লাস সাইন ইত্যাদি)
+        let cleaned = converted.replace(/\D/g, "");
+
+        // কান্ট্রি কোড (88) থাকলে রিমুভ করা
+        if (cleaned.startsWith("88") && cleaned.length > 11) {
+          cleaned = cleaned.substring(2);
+        }
+
+        // বাংলাদেশে ১১ ডিজিটের নম্বর 013-019 দিয়ে শুরু হতে হবে
+        const bdPhoneRegex = /^01[3-9]\d{8}$/;
+        if (bdPhoneRegex.test(cleaned)) {
+          return cleaned;
+        }
+
+        return null; // সঠিক নম্বর না হলে null রিটার্ন করবে
+      }
+
+      function updateSummary() {
+        const qty = Number(
+          document.querySelector('input[name="quantity"]:checked').value,
+        );
+
+        let subtotal = qty * UNIT_PRICE;
+        if (qty >= 2) {
+          subtotal = Math.round(subtotal * 0.8);
+        }
+
+        const delivery = 0;
+
+        summaryQty.textContent = `× ${qty.toLocaleString("bn-BD")}`;
+        summaryPrice.textContent = money(subtotal);
+        summaryDelivery.textContent = "ফ্রি (৳০)";
+        summaryTotal.textContent = money(subtotal + delivery);
+
+        qtyInputs.forEach((input) =>
+          input.closest(".pack").classList.toggle("active", input.checked),
+        );
+      }
+
+      qtyInputs.forEach((input) =>
+        input.addEventListener("change", updateSummary),
+      );
+      updateSummary();
+
+      /* ক্যারোজেল লজিক ও মোবাইল সোয়াইপ সাপোর্ট */
+      const carouselEl = document.getElementById("heroCarousel");
+      const slides = [...document.querySelectorAll(".slide")];
+      const dots = [...document.querySelectorAll(".carousel-dot")];
+      let currentSlide = 0;
+      let carouselTimer;
+
+      function showSlide(index) {
+        currentSlide = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) =>
+          slide.classList.toggle("active", i === currentSlide),
+        );
+        dots.forEach((dot, i) =>
+          dot.classList.toggle("active", i === currentSlide),
+        );
+      }
+
+      function startCarousel() {
+        carouselTimer = setInterval(() => showSlide(currentSlide + 1), 4500);
+      }
+
+      function resetCarousel() {
+        clearInterval(carouselTimer);
+        startCarousel();
+      }
+
+      document.querySelector(".prev")?.addEventListener("click", () => {
+        showSlide(currentSlide - 1);
+        resetCarousel();
+      });
+      document.querySelector(".next")?.addEventListener("click", () => {
+        showSlide(currentSlide + 1);
+        resetCarousel();
+      });
+      dots.forEach((dot, i) =>
+        dot.addEventListener("click", () => {
+          showSlide(i);
+          resetCarousel();
+        }),
+      );
+
+      if (carouselEl) {
+        carouselEl.addEventListener("mouseenter", () =>
+          clearInterval(carouselTimer),
+        );
+        carouselEl.addEventListener("mouseleave", startCarousel);
+
+        let startX = 0;
+        let endX = 0;
+        carouselEl.addEventListener(
+          "touchstart",
+          (e) => {
+            startX = e.changedTouches[0].screenX;
+          },
+          { passive: true },
+        );
+
+        carouselEl.addEventListener(
+          "touchend",
+          (e) => {
+            endX = e.changedTouches[0].screenX;
+            if (startX - endX > 50) {
+              showSlide(currentSlide + 1);
+              resetCarousel();
+            } else if (endX - startX > 50) {
+              showSlide(currentSlide - 1);
+              resetCarousel();
+            }
+          },
+          { passive: true },
+        );
+      }
+
+      startCarousel();
+
+      /* মডাল লজিক */
+      const modalOverlay = document.getElementById("orderModal");
+      const modalCard = document.getElementById("modalCard");
+      const modalIcon = document.getElementById("modalIcon");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalDesc = document.getElementById("modalDesc");
+
+      function openModal(isSuccess, message = "") {
+        if (isSuccess) {
+          modalCard.className = "modal-card success";
+          modalIcon.className = "fa-solid fa-check";
+          modalTitle.textContent = "অর্ডার সফল হয়েছে!";
+          modalDesc.textContent =
+            "ধন্যবাদ! আপনার অর্ডারটি সঠিকভাবে গ্রহণ করা হয়েছে। আমাদের প্রতিনিধি কল করে আপনার অর্ডারটি নিশ্চিত করবেন।";
+        } else {
+          modalCard.className = "modal-card failed";
+          modalIcon.className = "fa-solid fa-xmark";
+          modalTitle.textContent = "অর্ডার জমা হয়নি!";
+          modalDesc.textContent =
+            message ||
+            "দুঃখিত, কোনো একটি সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন অথবা সরাসরি আমাদের সাথে ফোনে কথা বলুন।";
+        }
+        modalOverlay.classList.add("active");
+        document.body.classList.add("modal-open");
+      }
+
+      function closeModal() {
+        modalOverlay.classList.remove("active");
+        document.body.classList.remove("modal-open");
+      }
+
+      modalOverlay?.addEventListener("click", (e) => {
+        if (e.target === modalOverlay) closeModal();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modalOverlay.classList.contains("active")) {
+          closeModal();
+        }
+      });
+
+      /* ফর্ম সাবমিট লজিক */
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        // ফোন নম্বর প্রসেসিং ও ভ্যালিডেশন
+        const phoneInput = form.querySelector('input[name="phone"]');
+        const rawPhone = phoneInput.value;
+        const validPhone = normalizeBDPhoneNumber(rawPhone);
+
+        if (!validPhone) {
+          openModal(
+            false,
+            "অনুগ্রহ করে একটি সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন (যেমন: 017XXXXXXXX)।",
+          );
+          phoneInput.focus();
+          return;
+        }
+
+        const submit = form.querySelector(".submit-btn");
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        // ক্লিন করা মোবাইল নম্বরটি ফর্মে সেট করা হলো
+        data.phone = validPhone;
+        data.quantity = Number(data.quantity);
+
+        let subtotal = data.quantity * UNIT_PRICE;
+        if (data.quantity >= 2) {
+          subtotal = Math.round(subtotal * 0.8);
+        }
+
+        data.subtotal = subtotal;
+        data.delivery = 0;
+        data.total = subtotal;
+        data.timestamp = new Date().toLocaleString("bn-BD");
+
+        submit.disabled = true;
+        submit.innerHTML =
+          'অর্ডার প্রসেস হচ্ছে... <i class="fa-solid fa-spinner fa-spin"></i>';
+
+        try {
+          if (APPS_SCRIPT_URL.includes("PASTE_YOUR")) {
+            await new Promise((resolve) => setTimeout(resolve, 800));
+            openModal(true);
+            form.reset();
+            document.querySelector(
+              'input[name="quantity"][value="1"]',
+            ).checked = true;
+            updateSummary();
+          } else {
+            await fetch(APPS_SCRIPT_URL, {
+              method: "POST",
+              mode: "no-cors",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(data),
+            });
+
+            openModal(true);
+            form.reset();
+            document.querySelector(
+              'input[name="quantity"][value="1"]',
+            ).checked = true;
+            updateSummary();
+          }
+        } catch (error) {
+          openModal(false, "নেটওয়ার্ক সমস্যার কারণে অর্ডার পাঠানো যায়নি।");
+        } finally {
+          submit.disabled = false;
+          submit.innerHTML =
+            'অর্ডার কনফার্ম করুন <i class="fa-solid fa-arrow-right"></i>';
+        }
+      });
+    </script>
+  </body>
+</html>
